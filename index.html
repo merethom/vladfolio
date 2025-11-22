@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="https://use.typekit.net/vnv5iip.css">
-    <style>
+   <style>
 
         * {
             margin: 0;
@@ -19,19 +19,16 @@
         }
         
         section.home-about {
-            background: #000;
             color: #fff;
             display: flex;
             gap: 50px;
             align-items: stretch;
-            /* padding: 50px; */
-            /* min-height: 100vh; */
         }
 
         section.home-about .freelancer {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: flex-start;
             max-height: 100vh;
             align-self: center;
             align-content: space-between;
@@ -58,19 +55,28 @@
             font-family: 'aktiv-grotesk', sans-serif;
             font-size: 1rem;
             font-weight: 300;
-            /* margin-bottom: 50px; */
             margin-top: 20px;
         }
 
         section.home-about h4 {
             font-family: 'Familjen-Grotesk', sans-serif;
             color: #A61210;
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             letter-spacing: 4px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        
+        section.home-about p.dot {
+            font-family: 'Familjen-Grotesk', sans-serif;
+            font-size: 2rem;
+            line-height: 10px;
+            margin-top: 15px;
         }
 
         section.home-about .freelancer span {
-            color: #2B2B2B;
+            color: #1F1F1F;
             font-family: 'Familjen-Grotesk', sans-serif;
             text-transform: uppercase;
             font-weight: 700;
@@ -87,35 +93,30 @@
             color: #A61210;
         }
 
-
-        section.home-about contact span {
-            font-family: 'Familjen-Grotesk', sans-serif;
-            font-size: 1.5625rem;
-            line-height: 10px;
-        }
-
         section.home-about a,
         section.home-about p u {
             color: white;
-            text-decoration-color: #A61210;
+            text-decoration: underline !important;
+            text-decoration-color: #A61210 !important;
             text-underline-offset: 0.3125rem;
-            transition: text-decoration 200ms;
+            transition: text-decoration 200ms !important;
         }
 
         section.home-about a:hover {
-            text-decoration-color: #fff;
+            text-decoration-color: #fff !important;
         }
 
-        /* @media (max-width: 1010px) {
+        @media (min-width: 1920px) {
             section.home-about .freelancer span {
-                font-size: 4vw;
+                font-size: 4rem;
             }
-        } */
+        }
 
         @media (max-width: 768px) {
             section.home-about {
                 flex-direction: column;
                 gap: 50px;
+                padding: 25px;
             }
 
             section.home-about .freelancer {
@@ -131,13 +132,12 @@
                 width: 100%;
             }
 
-
         }
     
     </style>
-</head>
-<body>
+    </head>
 
+    <body>
     <section class="home-about">
         <div class="freelancer">
             <span id="freelance">Free&shy;lance</span>
@@ -151,21 +151,22 @@
         <div class="contact-info">
             <div>
                 <h4 class="preFade fadeIn">contact</h4>
-                <span class="preFade fadeIn">.</span>
+                <p class="dot preFade fadeIn">.</p>
                 <p class="preFade fadeIn">Whether you'd like to explore a collaboration, confirm my availability, or discuss an upcoming project, you can reach me at <u>vladimir.somov@yahoo.com</u> or simply <a href="">book a call</a>.</p>
             </div>
             <div>
                 <h4 class="preFade fadeIn">clients</h4>
-                <span class="preFade fadeIn">.</span>
+                <p class="dot preFade fadeIn">.</p>
                 <p class="preFade fadeIn">Blur Studio, Epic Games, Nvidia, Ubisoft, Gnomon</p>
             </div>
             <div>
                 <h4 class="preFade fadeIn">about</h4>
-                <span class="preFade fadeIn">.</span>
+                <p class="dot preFade fadeIn">.</p>
                 <p class="preFade fadeIn">For more than a decade, I've been creating immersive worlds where light, atmosphere, and design come together to tell cinematic stories for film and games.</p>
             </div>
         </div>
-    </section>
+
+      </section>
     
 </body>
 </html>
