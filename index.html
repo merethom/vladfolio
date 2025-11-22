@@ -22,22 +22,41 @@
             background: #000;
             color: #fff;
             display: flex;
-            gap: 100px;
+            gap: 50px;
             align-items: stretch;
-            padding: 50px;
+            /* padding: 50px; */
             /* min-height: 100vh; */
         }
 
+        section.home-about .freelancer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-height: 100vh;
+            align-self: center;
+            align-content: space-between;
+            width: 50%;
+        }
+
+        section.home-about .freelancer span {
+            min-height: 0;
+        }
 
         section.home-about .contact-info {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            width: 50%;
+            gap: 50px;
+        }
+
+        section.home-about .contact-info > div {
+            min-height: 0;
         }
 
         section.home-about p {
             font-family: 'aktiv-grotesk', sans-serif;
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: 300;
             /* margin-bottom: 50px; */
             margin-top: 20px;
@@ -46,19 +65,21 @@
         section.home-about h4 {
             font-family: 'Familjen-Grotesk', sans-serif;
             color: #A61210;
-            font-size: 20px;
+            font-size: 1.25rem;
             letter-spacing: 4px;
         }
 
-        section.home-about .freelancer {
+        section.home-about .freelancer span {
             color: #2B2B2B;
             font-family: 'Familjen-Grotesk', sans-serif;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 3rem;
+            font-size: 5vw;
             letter-spacing: 0.75rem;
             line-height: 1;
-            max-width: 40vw;
+            overflow: visible;
+            hyphens: manual;
+            word-break: break-word;
         }
 
 
@@ -69,7 +90,7 @@
 
         section.home-about contact span {
             font-family: 'Familjen-Grotesk', sans-serif;
-            font-size: 25px;
+            font-size: 1.5625rem;
             line-height: 10px;
         }
 
@@ -77,7 +98,7 @@
         section.home-about p u {
             color: white;
             text-decoration-color: #A61210;
-            text-underline-offset: 5px;
+            text-underline-offset: 0.3125rem;
             transition: text-decoration 200ms;
         }
 
@@ -85,10 +106,32 @@
             text-decoration-color: #fff;
         }
 
+        /* @media (max-width: 1010px) {
+            section.home-about .freelancer span {
+                font-size: 4vw;
+            }
+        } */
+
         @media (max-width: 768px) {
             section.home-about {
                 flex-direction: column;
+                gap: 50px;
             }
+
+            section.home-about .freelancer {
+                width: 100%;
+                max-height: none;
+            }
+
+            section.home-about .freelancer span {
+                font-size: 2.75rem;
+            }
+
+            section.home-about .contact-info {
+                width: 100%;
+            }
+
+
         }
     
     </style>
@@ -96,7 +139,15 @@
 <body>
 
     <section class="home-about">
-        <div class="freelancer">FREELANCE ENVIRONMENT <span class="ampersand">&amp;</span>LIGHTING ARTIST <span class="ampersand">&amp;</span>LOOK DEVELOPMENT <span class="ampersand">&amp;</span>ART DIRECTION</div>
+        <div class="freelancer">
+            <span id="freelance">Free&shy;lance</span>
+            <span id="environment">environ&shy;ment <span class="ampersand">&amp;</span> LIGHT&shy;ING</span>
+            <span id="artist">art&shy;ist <span class="ampersand">&amp;</span></span>
+            <span id="look">LOOK</span>
+            <span id="development">develop&shy;ment</span>
+            <span id="art"><span class="ampersand">&amp;</span> art</span>
+            <span id="direction">direction</span>
+        </div>
         <div class="contact-info">
             <div>
                 <h4 class="preFade fadeIn">contact</h4>
