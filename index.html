@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlad's Page</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://use.typekit.net/vnv5iip.css">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        section.home-about {
+            background: #000;
+            color: #fff;
+            display: flex;
+            gap: 100px;
+            align-items: stretch;
+            padding: 50px;
+            /* min-height: 100vh; */
+        }
+
+
+        section.home-about .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        section.home-about p {
+            font-family: 'aktiv-grotesk', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            /* margin-bottom: 50px; */
+            margin-top: 20px;
+        }
+
+        section.home-about h4 {
+            font-family: 'Familjen-Grotesk', sans-serif;
+            color: #A61210;
+            font-size: 20px;
+            letter-spacing: 4px;
+        }
+
+        section.home-about .freelancer {
+            color: #2B2B2B;
+            font-family: 'Familjen-Grotesk', sans-serif;
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 3rem;
+            letter-spacing: 0.75rem;
+            line-height: 1;
+            max-width: 40vw;
+        }
+
+
+        section.home-about .freelancer span.ampersand {
+            color: #A61210;
+        }
+
+
+        section.home-about contact span {
+            font-family: 'Familjen-Grotesk', sans-serif;
+            font-size: 25px;
+            line-height: 10px;
+        }
+
+        section.home-about a,
+        section.home-about p u {
+            color: white;
+            text-decoration-color: #A61210;
+            text-underline-offset: 5px;
+            transition: text-decoration 200ms;
+        }
+
+        section.home-about a:hover {
+            text-decoration-color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            section.home-about {
+                flex-direction: column;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+
+    <section class="home-about">
+        <div class="freelancer">FREELANCE ENVIRONMENT <span class="ampersand">&amp;</span>LIGHTING ARTIST <span class="ampersand">&amp;</span>LOOK DEVELOPMENT <span class="ampersand">&amp;</span>ART DIRECTION</div>
+        <div class="contact-info">
+            <div>
+                <h4 class="preFade fadeIn">contact</h4>
+                <span class="preFade fadeIn">.</span>
+                <p class="preFade fadeIn">Whether you'd like to explore a collaboration, confirm my availability, or discuss an upcoming project, you can reach me at <u>vladimir.somov@yahoo.com</u> or simply <a href="">book a call</a>.</p>
+            </div>
+            <div>
+                <h4 class="preFade fadeIn">clients</h4>
+                <span class="preFade fadeIn">.</span>
+                <p class="preFade fadeIn">Blur Studio, Epic Games, Nvidia, Ubisoft, Gnomon</p>
+            </div>
+            <div>
+                <h4 class="preFade fadeIn">about</h4>
+                <span class="preFade fadeIn">.</span>
+                <p class="preFade fadeIn">For more than a decade, I've been creating immersive worlds where light, atmosphere, and design come together to tell cinematic stories for film and games.</p>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
